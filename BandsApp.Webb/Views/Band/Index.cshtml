@@ -1,0 +1,20 @@
+﻿@model BandsApp.Webb.Models.Band[]
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Start";
+}
+
+
+<h1 class="starth1">Cool bands  </h1>
+<ul>
+    @foreach (var band in Model)
+    {
+        <li>
+            <a href="/Details/@band.Id">@band.Name</a>
+
+        </li>
+
+    }
+
+
+</ul>
